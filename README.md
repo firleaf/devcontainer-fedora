@@ -1,4 +1,4 @@
-# devcontainer-alpine
+# devcontainer-fedora
 Generic barebones Development Container setup for Docker, Docker compose and Alpine.
 
 ## Requirements
