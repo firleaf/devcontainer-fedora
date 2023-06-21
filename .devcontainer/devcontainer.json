@@ -3,11 +3,11 @@
     "service": "devcontainer",
     "workspaceFolder": "/workspace",
     "initializeCommand": ". .devcontainer/lifecycle/initialize",
-    "onCreateCommand": ". /lifecycle/create",
-    "updateContentCommand": ". /lifecycle/update-content",
-    "postCreateCommand": ". /lifecycle/post-create",
-    "postStartCommand": ". /lifecycle/post-start",
-    "postAttachCommand": ". /lifecycle/post-attach",
+    "onCreateCommand": ". /tmp/create",
+    "updateContentCommand": ". /tmp/update-content",
+    "postCreateCommand": ". /tmp/post-create",
+    "postStartCommand": ". /tmp/post-start",
+    "postAttachCommand": ". /tmp/post-attach",
     "customizations": {
       "vscode": {
         "extensions": []
