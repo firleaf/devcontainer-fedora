@@ -15,7 +15,8 @@ RUN groupadd -g $GID $USERNAME \
     && usermod -aG wheel $USERNAME \
     && echo "%wheel ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
-COPY lifecycle /
+RUN mkdir /lifecycle
+COPY lifecycle /lifecycle
 
 COPY extra-packages /
 RUN dnf install -y $(cat /extra-packages)

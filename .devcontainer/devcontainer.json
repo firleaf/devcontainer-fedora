@@ -2,7 +2,7 @@
     "dockerComposeFile": "compose.yaml",
     "service": "devcontainer",
     "workspaceFolder": "/workspace",
-    "initializeCommand": ". /lifecycle/initialize",
+    "initializeCommand": ". .devcontainer/lifecycle/initialize",
     "onCreateCommand": ". /lifecycle/create",
     "updateContentCommand": ". /lifecycle/update-content",
     "postCreateCommand": ". /lifecycle/post-create",
