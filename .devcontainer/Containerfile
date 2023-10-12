@@ -4,11 +4,7 @@ ARG USERNAME=dev
 ARG UID=1000
 ARG GID=$UID
 
-RUN dnf install -y \
-    git \
-    gpg \
-    openssh \
-    sudo
+RUN dnf install -y sudo
 
 RUN groupadd -g $GID $USERNAME \
     && useradd -m -u $UID -g $GID $USERNAME \
